@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class boatRotation : MonoBehaviour {
+public class GyroDummyRotation : MonoBehaviour {
 
 	[SerializeField] float _rotationSpeed;
 
@@ -17,15 +17,11 @@ public class boatRotation : MonoBehaviour {
 		if ( Input.GetKey( KeyCode.LeftArrow ) || Input.GetKey( KeyCode.A ) ) {
 
 			this.transform.Rotate( new Vector3( 0, 0,  _rotationSpeed * Time.deltaTime) );
-
-			Debug.Log( "Rotate left" );
 		}
 
 		else if ( Input.GetKey( KeyCode.RightArrow ) || Input.GetKey( KeyCode.D ) ) {
 
 			this.transform.Rotate(  new Vector3( 0, 0, - _rotationSpeed * Time.deltaTime) );
-
-			Debug.Log( "Rotate right" );
 		} 
 	}
 }
