@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GyroGravity : SingletonMonoBehaviour<GyroGravity> {
 
+    public float GravityMultiplier = 10f;
+
     override protected void Awake() {
         base.Awake();
         Input.gyro.enabled = true;
@@ -24,7 +26,7 @@ public class GyroGravity : SingletonMonoBehaviour<GyroGravity> {
             //}
             // Don't float up if screen is upside down and hasn't auto-rotated yet
             gravity.y = Mathf.Min(gravity.y, 0);
-            return gravity;
+            return gravity * GravityMultiplier;
         }
     }
 
