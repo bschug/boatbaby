@@ -8,4 +8,9 @@ public class Baby : MonoBehaviour {
 
 		Debug.Log( "Hamjamham" );
 	}
+
+	public void SetToStartPosition() {
+
+		this.transform.position = new Vector3( 0, 1.1f, 0 );
+	}
 }

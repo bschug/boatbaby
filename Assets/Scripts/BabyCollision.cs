@@ -11,5 +11,12 @@ public class BabyCollision : MonoBehaviour {
 
 			this.gameObject.layer = 9;
 		}
+
+		if ( collider.tag == "deathzone" ) {
+
+			GetComponent<Baby>().SetToStartPosition();
+
+			this.gameObject.layer = 10;
+		}
 	}
 }

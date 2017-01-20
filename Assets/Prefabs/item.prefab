@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212233088533297434}
   - component: {fileID: 61882179743956116}
   - component: {fileID: 50576507431143428}
+  - component: {fileID: 114704745398614454}
   m_Layer: 4
   m_Name: item
   m_TagString: baby
@@ -76,6 +77,17 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1.83, y: 1.83}
+--- !u!114 &114704745398614454
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1269185120448380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c8b2d4260c1e40b786c93732010b14d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212233088533297434
 SpriteRenderer:
   m_ObjectHideFlags: 1

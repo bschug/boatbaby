@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 61685917587844124}
   - component: {fileID: 50961842790437362}
   - component: {fileID: 114277679757754256}
+  - component: {fileID: 114236975842609064}
   m_Layer: 4
   m_Name: eatableItem
   m_TagString: baby
@@ -77,6 +78,17 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1.83, y: 1.83}
+--- !u!114 &114236975842609064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1986158865076530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c8b2d4260c1e40b786c93732010b14d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114277679757754256
 MonoBehaviour:
   m_ObjectHideFlags: 1
