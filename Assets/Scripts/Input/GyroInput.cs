@@ -14,7 +14,8 @@ public class GyroInput : SingletonMonoBehaviour<GyroInput> {
 
     void Update() {
         Physics2D.gravity = AdjustedGravity;
-    }
+        Baby.Instance.AllowRolling = IsExtremelyTilted;
+    } 
 
     Vector2 AdjustedGravity
     {
@@ -30,5 +31,13 @@ public class GyroInput : SingletonMonoBehaviour<GyroInput> {
         }
     }
 
-    bool IsScreenFlipped { get { return Screen.orientation == ScreenOrientation.LandscapeLeft; } }
+    bool IsExtremelyTilted {
+        get {
+            return Mathf.Abs( Input.gyro.gravity.x ) > Mathf.Abs( Input.gyro.gravity.y );
+        }
+    }
+
+    private void OnGUI () {
+        GUILayout.Label( IsExtremelyTilted ? "TILTED" : "normal" );
+    }
 }
