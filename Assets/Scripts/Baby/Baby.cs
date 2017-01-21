@@ -38,6 +38,24 @@ public class Baby : SingletonMonoBehaviour<Baby> {
         Debug.Log("Hahahahaha");
     }
 
+    public void UseHat( HatItem item) {
+
+    	Debug.Log("Look at my awesome hat!" );
+    }
+
+    public void UseHandItem( HandItem item, bool isRightSide ) {
+
+    	if ( isRightSide == true ) {
+
+    		Debug.Log( "Look at this awesome item in my right hand" );
+    	}
+
+    	else {
+
+			Debug.Log( "Look at this awesome item in my left hand" );
+    	}
+    }
+
 	public void SetToStartPosition() {
 
 		this.transform.position = new Vector3( 0, 1.1f, 0 );

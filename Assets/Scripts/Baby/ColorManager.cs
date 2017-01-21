@@ -16,6 +16,4 @@ public class ColorManager : MonoBehaviour {
 			_targets[i].color = _colors[randomNumber];
 		}
 	}
-
-
 }
