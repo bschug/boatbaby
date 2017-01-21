@@ -24,7 +24,15 @@ public class Baby : SingletonMonoBehaviour<Baby> {
 
 		if ( _animator != null ) {
 
-			_animator.SetTrigger( "eatAnim" );
+			_animator.SetTrigger( "eat" );
+		}
+	}
+
+	public void React() {
+
+		if ( _animator != null ) {
+
+			_animator.SetTrigger( "emo" );
 		}
 	}
 
