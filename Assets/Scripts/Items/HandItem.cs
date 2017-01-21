@@ -8,19 +8,19 @@ public class HandItem : MonoBehaviour {
 
 		if ( collision.gameObject.tag == "baby" ) {
 
-			bool isRightHand;
-
-			if ( this.transform.position.x < collision.transform.position.x  ) {
-
-				isRightHand = false;
-			}
-
-			else {
-
-				isRightHand = true;
-			}
-
-			collision.gameObject.GetComponent<Baby>().UseHandItem( this, isRightHand );
+			Baby baby = collision.gameObject.GetComponent<Baby>();
+			
+			baby.UseHandItem( this, IsRightSide( baby.transform.position ) );
 		}
+	}
+
+	bool  IsRightSide( Vector3 babyPosition ) {
+
+		if ( this.transform.position.x < babyPosition.x  ) {
+
+			return false;
+		}
+
+		return true;
 	}
 }

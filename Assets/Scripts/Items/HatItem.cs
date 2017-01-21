@@ -8,7 +8,9 @@ public class HatItem : MonoBehaviour {
 
 		if ( collision.gameObject.tag == "baby" ) {
 
-			collision.gameObject.GetComponent<Baby>().UseHat( this );
+			Baby baby = collision.gameObject.GetComponent<Baby>();
+
+			baby.UseHat( this );
 		}
 	}
 }
