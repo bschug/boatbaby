@@ -41,6 +41,7 @@ public class EyeTracking : SingletonMonoBehaviour<EyeTracking>
             }
             return PointsOfInterest
                 .OrderBy( poi => Vector3.Distance(Baby.Instance.ScreenPosition, poi.ScreenPosition) )
+                .Reverse()
                 .OrderBy( poi => poi.Priority )
                 .Last()
                 .ScreenPosition;
