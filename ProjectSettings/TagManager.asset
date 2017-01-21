@@ -75,6 +75,9 @@ TagManager:
   - name: waves_mid
     uniqueID: 2625108799
     locked: 0
+  - name: waves_items
+    uniqueID: 2976108453
+    locked: 0
   - name: waves_front
     uniqueID: 2837943101
     locked: 0
