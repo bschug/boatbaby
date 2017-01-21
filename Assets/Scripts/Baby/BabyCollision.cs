@@ -7,7 +7,7 @@ public class BabyCollision : MonoBehaviour {
 	Baby _baby;
 	ColorManager _colorManager;
 
-	void Start() {
+	void Awake() {
 
 		_baby = GetComponent<Baby>();
 		_colorManager = GetComponent<ColorManager>();

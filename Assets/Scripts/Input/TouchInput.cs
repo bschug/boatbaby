@@ -5,7 +5,7 @@ using UnityEngine;
 public class TouchInput : MonoBehaviour {
 
 
-	public GameObject 	_target;
+	GameObject 			_target;
 	Ray 				_ray = new Ray();
 	RaycastHit2D 		_hit = new RaycastHit2D();
 	Camera 				_mainCamera;
