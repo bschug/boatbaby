@@ -45,3 +45,33 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: background
+    uniqueID: 849080377
+    locked: 0
+  - name: water_back
+    uniqueID: 2801401883
+    locked: 0
+  - name: character_body
+    uniqueID: 4290385337
+    locked: 0
+  - name: character_face_feet
+    uniqueID: 3328397837
+    locked: 0
+  - name: character_item_back
+    uniqueID: 1801734729
+    locked: 0
+  - name: character_arms
+    uniqueID: 1172344943
+    locked: 0
+  - name: chracter_item_front
+    uniqueID: 2495655055
+    locked: 0
+  - name: water_mid
+    uniqueID: 2625108799
+    locked: 0
+  - name: boat
+    uniqueID: 3717573565
+    locked: 0
+  - name: water_front
+    uniqueID: 2837943101
+    locked: 0
