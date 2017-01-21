@@ -24,7 +24,7 @@ public class DragAndDrop : MonoBehaviour {
 
 			_hit = Physics2D.Raycast( _ray.origin, _ray.origin );
 
-			if ( _hit.collider != null && _hit.collider.tag == "baby" ) {
+			if ( _hit.collider != null && _hit.collider.tag == "baby" || _hit.collider != null && _hit.collider.tag == "item" ) {
 
 				_target = _hit.collider.gameObject;
 			}
