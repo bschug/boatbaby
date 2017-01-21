@@ -21,23 +21,21 @@ public class DragAndDrop : MonoBehaviour {
 	void Update () {
 
 		if ( Input.GetMouseButtonDown( 0 ) == true ) {
-
 			GetTarget();
 			EnablePointOfInterest();
-            Baby.Instance.IsAnticipating = true;
 		}
 
-		if ( Input.GetMouseButton( 0 ) == true ) {
+        if (_target != null) {
+            Baby.Instance.IsAnticipating = true;
+        }
 
+        if ( Input.GetMouseButton( 0 ) == true ) {
 			Vector3 position = GetPosition();
-
 			MoveTarget( position );
-
 			MovePointOfInterest( position );
 		}
 
 		if ( Input.GetMouseButtonUp( 0 ) == true ) {
-
 			RemoveTarget();
 			DisablePointOfInterest();
             Baby.Instance.IsAnticipating = false;
