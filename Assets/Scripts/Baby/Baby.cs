@@ -95,6 +95,18 @@ public class Baby : SingletonMonoBehaviour<Baby> {
         }
     }
 
+    public bool IsAnticipating {
+        set {
+            if (_animator.GetBool("Anticipation") == value) {
+                return;
+            }
+            _animator.SetBool( "Anticipation", value );
+            if (value) {
+                _animator.SetTrigger( "StartAnticipation" );
+            }
+        }
+    }
+
     public bool AllowRolling {
         set {
             if (value) {
