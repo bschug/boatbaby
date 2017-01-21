@@ -39,7 +39,11 @@ public class EyeTracking : SingletonMonoBehaviour<EyeTracking>
             if (PointsOfInterest.Count == 0) {
                 return Input.mousePosition;
             }
-            return PointsOfInterest.OrderBy( poi => poi.Priority ).Last().ScreenPosition;
+            return PointsOfInterest
+                .OrderBy( poi => Vector3.Distance(Baby.Instance.ScreenPosition, poi.ScreenPosition) )
+                .OrderBy( poi => poi.Priority )
+                .Last()
+                .ScreenPosition;
         }
     }
 
