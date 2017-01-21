@@ -7,6 +7,11 @@ public class Baby : SingletonMonoBehaviour<Baby> {
 
     public float ResetDuration = 1.5f;
 
+    [SerializeField]
+    int NumIdleAnimations = 6;
+    [SerializeField]
+    int NumEmotionAnimations = 3;
+
 	Animator _animator;
     Rigidbody2D Rigidbody2D;
 
@@ -30,11 +35,16 @@ public class Baby : SingletonMonoBehaviour<Baby> {
         NeutralRotation = transform.rotation;
 	}
 
+    private void Update () {
+        _animator.SetInteger( "RandomIdle", Random.Range( 0, NumIdleAnimations ) );
+        _animator.SetInteger( "RandomEmotion", Random.Range( 0, NumEmotionAnimations ) );
+    }
+
 	public void Eat( EatableItem item ) {
 
 		if ( _animator != null ) {
 
-			_animator.SetTrigger( "eat" );
+			_animator.SetTrigger( "Eat" );
 		}
 	}
 
@@ -42,7 +52,7 @@ public class Baby : SingletonMonoBehaviour<Baby> {
 
 		if ( _animator != null ) {
 
-			_animator.SetTrigger( "emo" );
+			_animator.SetTrigger( "Emotion" );
 		}
 	}
 
