@@ -29,8 +29,6 @@ public class EyeTracking : SingletonMonoBehaviour<EyeTracking>
     Vector2 LookDirection {
         get {
             var direction = MostInterestingPoint - Baby.Instance.ScreenPosition;
-            //            direction.x = direction.x / Screen.width * 2;
-            //            direction.y = direction.y / Screen.height * 2;
             direction.Normalize();
             return direction;
         }
@@ -38,11 +36,10 @@ public class EyeTracking : SingletonMonoBehaviour<EyeTracking>
 
     Vector2 MostInterestingPoint {
         get {
-            return Input.mousePosition;
-//            if (PointsOfInterest.Count == 0) {
-//                return null;
-//            }
-//            return PointsOfInterest.OrderBy( poi => poi.Priority ).Last();
+            if (PointsOfInterest.Count == 0) {
+                return Input.mousePosition;
+            }
+            return PointsOfInterest.OrderBy( poi => poi.Priority ).Last().ScreenPosition;
         }
     }
 

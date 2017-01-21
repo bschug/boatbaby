@@ -13,7 +13,7 @@ public class PointOfInterest : MonoBehaviour {
         EyeTracking.Instance.RemovePointOfInterest( this );
     }
 
-    public Vector3 Position {
-        get { return transform.position; }
+    public Vector3 ScreenPosition {
+        get { return Camera.main.WorldToScreenPoint( transform.position ); }
     }
 }
