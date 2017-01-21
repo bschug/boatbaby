@@ -32,7 +32,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: eye_left_tracking
+    path: baby_pivot/eye_left_tracking
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -51,7 +51,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: eye_right_tracking
+    path: baby_pivot/eye_right_tracking
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -70,7 +70,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: eye_left_tracking/eye_left_base/eye_left_pupil
+    path: baby_pivot/eye_left_tracking/eye_left_base/eye_left_pupil
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -89,7 +89,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: eye_right_tracking/eye_right_base/eye_right_pupil
+    path: baby_pivot/eye_right_tracking/eye_right_base/eye_right_pupil
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -108,7 +108,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: mouth_tracking
+    path: baby_pivot/mouth_tracking
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves: []
@@ -190,7 +190,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: eye_left_tracking
+    path: baby_pivot/eye_left_tracking
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -212,7 +212,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: eye_left_tracking
+    path: baby_pivot/eye_left_tracking
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -234,7 +234,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: eye_left_tracking
+    path: baby_pivot/eye_left_tracking
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -256,7 +256,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: eye_right_tracking
+    path: baby_pivot/eye_right_tracking
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -278,7 +278,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: eye_right_tracking
+    path: baby_pivot/eye_right_tracking
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -300,7 +300,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: eye_right_tracking
+    path: baby_pivot/eye_right_tracking
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -322,7 +322,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: eye_left_tracking/eye_left_base/eye_left_pupil
+    path: baby_pivot/eye_left_tracking/eye_left_base/eye_left_pupil
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -344,7 +344,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: eye_left_tracking/eye_left_base/eye_left_pupil
+    path: baby_pivot/eye_left_tracking/eye_left_base/eye_left_pupil
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -366,7 +366,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: eye_left_tracking/eye_left_base/eye_left_pupil
+    path: baby_pivot/eye_left_tracking/eye_left_base/eye_left_pupil
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -388,7 +388,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: eye_right_tracking/eye_right_base/eye_right_pupil
+    path: baby_pivot/eye_right_tracking/eye_right_base/eye_right_pupil
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -410,7 +410,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: eye_right_tracking/eye_right_base/eye_right_pupil
+    path: baby_pivot/eye_right_tracking/eye_right_base/eye_right_pupil
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -432,7 +432,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: eye_right_tracking/eye_right_base/eye_right_pupil
+    path: baby_pivot/eye_right_tracking/eye_right_base/eye_right_pupil
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -454,7 +454,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: mouth_tracking
+    path: baby_pivot/mouth_tracking
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -476,7 +476,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: mouth_tracking
+    path: baby_pivot/mouth_tracking
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -498,7 +498,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: mouth_tracking
+    path: baby_pivot/mouth_tracking
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves: []
