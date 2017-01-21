@@ -444,9 +444,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.1
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 0.9
+  m_ExitTime: 0
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -714,7 +714,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.1
   m_TransitionOffset: 0
   m_ExitTime: 0.9
-  m_HasExitTime: 1
+  m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -1030,6 +1030,29 @@ AnimatorState:
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
+--- !u!1102 &1102432399267284304
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: idle_01
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
 --- !u!1102 &1102566677355377416
 AnimatorState:
   serializedVersion: 5
@@ -1073,7 +1096,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: c9b36c658f6953144a90f77149c11872, type: 2}
+  m_Motion: {fileID: 7400000, guid: b92db7eea3a59374fac789ff9fc888d1, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1138,7 +1161,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Start
-  m_Speed: 1
+  m_Speed: 100
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101322365850567704}
@@ -1447,13 +1470,13 @@ AnimatorStateMachine:
   m_EntryTransitions: []
   m_StateMachineTransitions:
     data:
-      first: {fileID: 1107112506704907480}
-      second:
-      - {fileID: 1109769288267864266}
-    data:
       first: {fileID: 1107677162953876136}
       second:
       - {fileID: 1109940938586440706}
+    data:
+      first: {fileID: 1107112506704907480}
+      second:
+      - {fileID: 1109769288267864266}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 648, y: 60, z: 0}
   m_EntryPosition: {x: 96, y: 60, z: 0}
@@ -1497,7 +1520,7 @@ AnimatorStateMachine:
   m_AnyStatePosition: {x: -180, y: 192, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
-  m_ParentStateMachinePosition: {x: 564, y: -12, z: 0}
+  m_ParentStateMachinePosition: {x: 612, y: 180, z: 0}
   m_DefaultState: {fileID: 1102655057472531294}
 --- !u!1107 &1107797765487709546
 AnimatorStateMachine:
