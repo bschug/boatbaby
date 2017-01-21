@@ -23,15 +23,15 @@ public class DragAndDrop : MonoBehaviour {
 		if ( Input.GetMouseButtonDown( 0 ) == true ) {
 
 			GetTarget();
-
 			EnablePointOfInterest();
+            Baby.Instance.IsAnticipating = true;
 		}
 
 		if ( Input.GetMouseButton( 0 ) == true ) {
 
 			Vector3 position = GetPosition();
 
-			MoveBaby( position );
+			MoveTarget( position );
 
 			MovePointOfInterest( position );
 		}
@@ -39,8 +39,8 @@ public class DragAndDrop : MonoBehaviour {
 		if ( Input.GetMouseButtonUp( 0 ) == true ) {
 
 			RemoveTarget();
-
 			DisablePointOfInterest();
+            Baby.Instance.IsAnticipating = false;
 		}
 	}
 
@@ -76,7 +76,7 @@ public class DragAndDrop : MonoBehaviour {
 		}
 	}
 
-	void MoveBaby( Vector3 position ) {
+	void MoveTarget( Vector3 position ) {
 
 		if ( _target != null ) {
 
