@@ -46,11 +46,7 @@ public class EyeTracking : SingletonMonoBehaviour<EyeTracking>
                 .ScreenPosition;
         }
     }
-
-    private void OnGUI () {
-        GUILayout.Label( "bla:" + LookDirection.ToString() );
-    }
-
+    
     void SetLookDirection(Vector2 position) {
         Animator.SetFloat( "x", position.x );
         Animator.SetFloat( "y", position.y );

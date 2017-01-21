@@ -37,7 +37,7 @@ public class Baby : SingletonMonoBehaviour<Baby> {
 
     private void Update () {
         _animator.SetInteger( "RandomIdle", Random.Range( 0, NumIdleAnimations ) );
-        _animator.SetInteger( "RandomEmotion", Random.Range( 0, NumEmotionAnimations ) );
+        _animator.SetInteger( "RandomEmo", Random.Range( 0, NumEmotionAnimations ) );
     }
 
 	public void Eat( EatableItem item ) {
@@ -142,8 +142,5 @@ public class Baby : SingletonMonoBehaviour<Baby> {
 
         IsResetting = false;
     }
-
-    private void OnGUI () {
-        GUILayout.Label( IsResetting ? "Resetting" : "not resetting" );
-    }
+    
 }
