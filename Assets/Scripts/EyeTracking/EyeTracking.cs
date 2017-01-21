@@ -12,7 +12,7 @@ public class EyeTracking : SingletonMonoBehaviour<EyeTracking>
     [SerializeField]
     Animator Animator;
 
-    List<PointOfInterest> PointsOfInterest;
+    List<PointOfInterest> PointsOfInterest = new List<PointOfInterest>();
 
     public void AddPointOfInterest (PointOfInterest poi) {
         PointsOfInterest.Add( poi );
