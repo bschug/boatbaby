@@ -30,17 +30,7 @@ public class TouchInput : MonoBehaviour {
 
 				_target = _hit.collider.gameObject;
 
-				Animator animator = _target.GetComponent<Animator>();
-
-				if ( animator != null ) {
-
-					animator.SetTrigger( "reactAnim" );
-				}
-
-				else {
-
-					Debug.LogWarning( "Target has no animator component" );
-				}
+				_target.GetComponent<Baby>().React();
 			}
 		}
 	}

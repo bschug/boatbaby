@@ -34,7 +34,15 @@ public class Baby : SingletonMonoBehaviour<Baby> {
 
 		if ( _animator != null ) {
 
-			_animator.SetTrigger( "eatAnim" );
+			_animator.SetTrigger( "eat" );
+		}
+	}
+
+	public void React() {
+
+		if ( _animator != null ) {
+
+			_animator.SetTrigger( "emo" );
 		}
 	}
 
@@ -46,6 +54,24 @@ public class Baby : SingletonMonoBehaviour<Baby> {
     public void WakeUp()
     {
         Debug.Log("Hahahahaha");
+    }
+
+    public void UseHat( HatItem item) {
+
+    	Debug.Log("Look at my awesome hat!" );
+    }
+
+    public void UseHandItem( HandItem item, bool isRightSide ) {
+
+    	if ( isRightSide == true ) {
+
+    		Debug.Log( "Look at this awesome item in my right hand" );
+    	}
+
+    	else {
+
+			Debug.Log( "Look at this awesome item in my left hand" );
+    	}
     }
 
 	public void SetToStartPosition() {
