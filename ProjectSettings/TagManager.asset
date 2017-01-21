@@ -48,7 +48,10 @@ TagManager:
   - name: background
     uniqueID: 849080377
     locked: 0
-  - name: water_back
+  - name: waves_far
+    uniqueID: 2137815197
+    locked: 0
+  - name: waves_back
     uniqueID: 2801401883
     locked: 0
   - name: character_body
@@ -66,12 +69,15 @@ TagManager:
   - name: chracter_item_front
     uniqueID: 2495655055
     locked: 0
-  - name: water_mid
-    uniqueID: 2625108799
-    locked: 0
   - name: boat
     uniqueID: 3717573565
     locked: 0
-  - name: water_front
+  - name: waves_mid
+    uniqueID: 2625108799
+    locked: 0
+  - name: waves_items
+    uniqueID: 2976108453
+    locked: 0
+  - name: waves_front
     uniqueID: 2837943101
     locked: 0
