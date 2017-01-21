@@ -7,6 +7,7 @@ TagManager:
   - deathzone
   - water
   - baby
+  - item
   layers:
   - Default
   - TransparentFX

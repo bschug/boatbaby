@@ -5,9 +5,27 @@ using UnityEngine;
 
 public class Baby : SingletonMonoBehaviour<Baby> {
 
+	Animator _animator;
+
+	void Awake() {
+
+		if ( GetComponent<Animator>() != null ) {
+
+			_animator = GetComponent<Animator>();
+		}
+
+		else {
+
+			Debug.LogWarning( "Baby has no animator" );
+		}
+	}
+
 	public void Eat( EatableItem item ) {
 
-		Debug.Log( "Hamjamham" );
+		if ( _animator != null ) {
+
+			_animator.SetTrigger( "eatAnim" );
+		}
 	}
 
     public void Sleep()
