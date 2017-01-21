@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class BabyCollision : MonoBehaviour {
 
+	Baby _baby;
+	ColorManager _colorManager;
+
+	void Start() {
+
+		_baby = GetComponent<Baby>();
+		_colorManager = GetComponent<ColorManager>();
+	}
+
 
 	void OnTriggerEnter2D( Collider2D collider ) {
 
@@ -14,9 +23,11 @@ public class BabyCollision : MonoBehaviour {
 
 		if ( collider.tag == "deathzone" ) {
 
-			GetComponent<Baby>().SetToStartPosition();
+			_baby.SetToStartPosition();
 
 			this.gameObject.layer = 10;
+
+			_colorManager.PickRandomColor();
 		}
 	}
 }
