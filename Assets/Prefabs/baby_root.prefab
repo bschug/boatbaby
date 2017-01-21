@@ -162,6 +162,7 @@ GameObject:
   - component: {fileID: 95282696244096690}
   - component: {fileID: 114287316788938406}
   - component: {fileID: 114998567069021056}
+  - component: {fileID: 114176211739439398}
   m_Layer: 10
   m_Name: baby_root
   m_TagString: baby
@@ -254,8 +255,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4188502899685084}
-  - component: {fileID: 95982245919678248}
-  - component: {fileID: 114100430560729240}
   m_Layer: 10
   m_Name: baby_pivot
   m_TagString: Untagged
@@ -754,29 +753,12 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!95 &95982245919678248
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1608806249481276}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7746f501156c0ba49ace1318c664d4f0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114100430560729240
+--- !u!114 &114176211739439398
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1608806249481276}
+  m_GameObject: {fileID: 1320181250275708}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31a85d48169c6ad4aa1ee6e9779249b6, type: 3}
@@ -784,7 +766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MinDistance: 10
   MaxDistance: 200
-  Animator: {fileID: 95982245919678248}
+  Animator: {fileID: 95282696244096690}
 --- !u!114 &114287316788938406
 MonoBehaviour:
   m_ObjectHideFlags: 1
