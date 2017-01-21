@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Baby : MonoBehaviour {
+public class Baby : SingletonMonoBehaviour<Baby> {
 
-	public void EatThis( EatableItem item ) {
+	public void Eat( EatableItem item ) {
 
 		Debug.Log( "Hamjamham" );
 	}

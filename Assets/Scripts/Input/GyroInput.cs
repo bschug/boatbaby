@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GyroGravity : SingletonMonoBehaviour<GyroGravity> {
+public class GyroInput : SingletonMonoBehaviour<GyroInput> {
 
     public float GravityMultiplier = 10f;
+    public float RollThreshold = 1f;
 
     override protected void Awake() {
         base.Awake();
@@ -20,12 +21,11 @@ public class GyroGravity : SingletonMonoBehaviour<GyroGravity> {
         get
         {
             var gravity = Input.gyro.gravity;
-            // Invert gravity if screen is flipped
-            //if (IsScreenFlipped) {
-            //    gravity *= -1;
-            //}
-            // Don't float up if screen is upside down and hasn't auto-rotated yet
             gravity.y = Mathf.Min(gravity.y, 0);
+            gravity.Normalize();
+            if (Mathf.Abs(gravity.x) / Mathf.Abs(gravity.y) < RollThreshold) {
+                gravity = Vector3.down;
+            }
             return gravity * GravityMultiplier;
         }
     }

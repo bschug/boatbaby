@@ -8,7 +8,7 @@ public class EatableItem : MonoBehaviour {
 
 		if ( collision.gameObject.tag == "baby" ) {
 
-			collision.gameObject.GetComponent<Baby>().EatThis( this );
+			collision.gameObject.GetComponent<Baby>().Eat( this );
 
 			Destroy( this.gameObject );
 		}
