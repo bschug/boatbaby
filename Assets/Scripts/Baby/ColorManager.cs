@@ -5,13 +5,16 @@ using UnityEngine;
 public class ColorManager : MonoBehaviour {
 
 	public List<Color> _colors;
-	public SpriteRenderer _target;
+	public List<SpriteRenderer> _targets = new List<SpriteRenderer>();
 
 	public void PickRandomColor() {
 
 		int randomNumber = Random.Range( 0, _colors.Count );
 
-		_target.color = _colors[ randomNumber ];
+		for ( int i = 0; i < _targets.Count; i++ ) {
+
+			_targets[i].color = _colors[randomNumber];
+		}
 	}
 
 
