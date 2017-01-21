@@ -28,3 +28,29 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Assets/Baby_Test.meta
+Assets/Baby_Test/Baby-assets.meta
+Assets/Baby_Test/Baby-assets/eye_left.png
+Assets/Baby_Test/Baby-assets/eye_left.png.meta
+Assets/Baby_Test/Baby-assets/rattle.png
+Assets/Baby_Test/Baby-assets/rattle.png.meta
+Assets/Baby_Test/Baby.psd
+Assets/Baby_Test/Baby_animator.controller
+Assets/Baby_Test/Baby_animator.controller.meta
+Assets/Baby_Test/Wave.anim
+Assets/Baby_Test/Wave.anim.meta
+Assets/Baby_Test/blinking.anim
+Assets/Baby_Test/blinking.anim.meta
+Assets/Baby_Test/cry.anim
+Assets/Baby_Test/munching.anim.meta
+Assets/Baby_Test/Baby.psd.meta
+Assets/Baby_Test/cry.anim.meta
+Assets/Baby_Test/munching.anim
+Assets/Baby_Test/pupil.png
+Assets/Baby_Test/pupil.png.meta
+Assets/Baby_Test/rattle.anim
+Assets/Baby_Test/rattle.anim.meta
+Assets/Baby_Test/tear.png
+Assets/Baby_Test/tear.png.meta
+Assets/Scenes/animation tests.unity
+Assets/Scenes/animation tests.unity.meta
