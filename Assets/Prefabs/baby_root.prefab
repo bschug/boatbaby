@@ -779,6 +779,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ResetDuration: 1.5
+  HeadPivot: {fileID: 4660026460913182}
+  LeftHandPivot: {fileID: 4019356903688092}
+  RightHandPivot: {fileID: 4729865439826954}
   NumIdleAnimations: 6
   NumEmotionAnimations: 3
 --- !u!114 &114998567069021056
