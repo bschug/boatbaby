@@ -118,7 +118,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleIdentifier: com.globalgamejam.ggj2017.berlin.boatbaby
+  bundleIdentifier: com.bschug.boatbaby
   bundleVersion: 1.0
   preloadedAssets: []
   metroInputSource: 0
@@ -197,8 +197,8 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: C:/Users/Benjamin/Documents/android.keystore
+  AndroidKeyaliasName: boatbaby
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
   androidEnableBanner: 1
