@@ -13,6 +13,7 @@ public class BabySoundManager : SingletonMonoBehaviour<BabySoundManager> {
     public AudioClip[] CheerSounds;
     public AudioClip[] ScaredSounds;
     public AudioClip[] ShySounds;
+    public AudioClip[] IdleSounds;
 
     protected override void Awake () {
         base.Awake();
@@ -54,5 +55,9 @@ public class BabySoundManager : SingletonMonoBehaviour<BabySoundManager> {
 
     public void Shy() {
         PlaySoundFromArray( ShySounds );
+    }
+
+    public void Idle() {
+        PlaySoundFromArray( IdleSounds );
     }
 }
