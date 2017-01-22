@@ -7,13 +7,17 @@ public class ColorManager : MonoBehaviour {
 	public List<Color> _colors;
 	public List<SpriteRenderer> _targets = new List<SpriteRenderer>();
 
-	public void PickRandomColor() {
+	public Color GetRandomColor() {
 
-		int randomNumber = Random.Range( 0, _colors.Count );
+		return _colors[ Random.Range( 0, _colors.Count ) ];
+	}
+
+	public void SetColor( Color color ) {
 
 		for ( int i = 0; i < _targets.Count; i++ ) {
 
-			_targets[i].color = _colors[randomNumber];
+			_targets[i].color = color;
 		}
 	}
+
 }

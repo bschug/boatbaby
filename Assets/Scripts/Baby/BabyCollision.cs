@@ -24,10 +24,6 @@ public class BabyCollision : MonoBehaviour {
 		if ( collider.tag == "deathzone" ) {
 
 			_baby.SetToStartPosition();
-
-			this.gameObject.layer = 10;
-
-			_colorManager.PickRandomColor();
 		}
 	}
 }
