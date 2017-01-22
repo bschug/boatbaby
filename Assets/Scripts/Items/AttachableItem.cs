@@ -45,8 +45,10 @@ public class AttachableItem : MonoBehaviour {
         var result = new List<Collider2D>();
         result.AddRange( GetComponents<BoxCollider2D>() );
         result.AddRange( GetComponents<CircleCollider2D>() );
+        result.AddRange( GetComponents<PolygonCollider2D>() );
         result.AddRange( transform.GetComponentsInChildren<BoxCollider2D>() );
         result.AddRange( transform.GetComponentsInChildren<CircleCollider2D>() );
+        result.AddRange( transform.GetComponentsInChildren<PolygonCollider2D>() );
         return result;
     }
 
