@@ -87,8 +87,12 @@ public class Baby : SingletonMonoBehaviour<Baby> {
     }
 
     public void RemoveHat() {
-        Hat.Detach();
-        Hat = null;
+
+    	if ( Hat != null ) {
+
+	        Hat.Detach();
+	        Hat = null;
+	    }
     }
 
     public void UseInLeftHand(HandItem item) {
@@ -100,8 +104,10 @@ public class Baby : SingletonMonoBehaviour<Baby> {
     }
 
     public void RemoveLeftHandItem() {
-        LeftHandItem.Detach();
-        LeftHandItem = null;
+		if ( LeftHandItem != null ) {
+	        LeftHandItem.Detach();
+	        LeftHandItem = null;
+	    }
     }
 
     public void UseInRightHand (HandItem item) {
@@ -113,8 +119,10 @@ public class Baby : SingletonMonoBehaviour<Baby> {
     }
 
     public void RemoveRightHandItem() {
-        RightHandItem.Detach();
-        RightHandItem = null;
+    	if ( RightHandItem != null ) {
+	        RightHandItem.Detach();
+	        RightHandItem = null;
+	    }
     }
 
     public void DropAllItems() {
