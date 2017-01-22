@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class IdleAnimationBehaviour : StateMachineBehaviour {
 
-    float Percentage = 10;
+    float Percentage = 50;
     float MinTimeBetween = 5;
 
     float LastPlaybackTime = 0;
