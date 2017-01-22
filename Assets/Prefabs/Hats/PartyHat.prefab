@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114679914540266954}
   - component: {fileID: 114960326611696726}
   - component: {fileID: 114850705349560178}
-  - component: {fileID: 61589212415803614}
+  - component: {fileID: 60797684633367448}
   m_Layer: 11
   m_Name: PartyHat
   m_TagString: item
@@ -67,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1235106635569326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.04026413, y: 0.68, z: 0}
+  m_LocalPosition: {x: -13.615604, y: 2.0159137, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4060755086429466}
@@ -94,8 +94,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61589212415803614
-BoxCollider2D:
+--- !u!60 &60797684633367448
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -105,9 +105,12 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0.9532349, y: 0.32557833}
-  serializedVersion: 2
-  m_Size: {x: 5.1273236, y: 1.1788433}
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -0.19098282, y: 2.5660632}
+      - {x: 0.8937607, y: 0.13713193}
+      - {x: -1.1119671, y: 0.10770297}
 --- !u!114 &114679914540266954
 MonoBehaviour:
   m_ObjectHideFlags: 1
