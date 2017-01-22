@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 58689405660290900}
   - component: {fileID: 61340899888689614}
   m_Layer: 11
-  m_Name: Lolly
+  m_Name: Lollipop
   m_TagString: item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

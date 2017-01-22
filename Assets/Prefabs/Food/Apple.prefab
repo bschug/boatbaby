@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114011920590494378}
   - component: {fileID: 58894775838999546}
   m_Layer: 11
-  m_Name: eatableItem
+  m_Name: Apple
   m_TagString: item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
