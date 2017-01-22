@@ -82,6 +82,7 @@ public class Baby : SingletonMonoBehaviour<Baby> {
 
         Hat = item;
         Hat.AttachTo( HeadPivot );
+        BabySoundManager.Instance.AttachItem();
     }
 
     public void RemoveHat() {
@@ -99,6 +100,7 @@ public class Baby : SingletonMonoBehaviour<Baby> {
         }
         LeftHandItem = item;
         LeftHandItem.AttachTo( LeftHandPivot );
+        BabySoundManager.Instance.AttachItem();
     }
 
     public void RemoveLeftHandItem() {
@@ -114,6 +116,7 @@ public class Baby : SingletonMonoBehaviour<Baby> {
         }
         RightHandItem = item;
         RightHandItem.AttachTo( RightHandPivot );
+        BabySoundManager.Instance.AttachItem();
     }
 
     public void RemoveRightHandItem() {
