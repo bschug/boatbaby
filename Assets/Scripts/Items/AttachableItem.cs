@@ -7,8 +7,9 @@ public class AttachableItem : MonoBehaviour {
     Transform FollowPoint = null;
     SpriteRenderer SpriteRenderer;
     List<Collider2D> AllColliders;
+    protected string SortingLayerWhenAttached = "character_item_front";
 
-    protected void Awake () {
+    protected virtual void Awake () {
         SpriteRenderer = GetComponent<SpriteRenderer>();
         if (SpriteRenderer == null) {
             SpriteRenderer = transform.GetComponentInChildren<SpriteRenderer>();
@@ -26,7 +27,7 @@ public class AttachableItem : MonoBehaviour {
     public void AttachTo (Transform followPoint) {
         Debug.Log( "Attaching " + name );
         FollowPoint = followPoint;
-        SpriteRenderer.sortingLayerName = "character_item_front";
+        SpriteRenderer.sortingLayerName = SortingLayerWhenAttached;
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         GetComponent<PointOfInterest>().enabled = false;
         DisableColliders();

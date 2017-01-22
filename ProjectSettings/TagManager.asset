@@ -81,3 +81,6 @@ TagManager:
   - name: waves_front
     uniqueID: 2837943101
     locked: 0
+  - name: titlescreen
+    uniqueID: 3591952967
+    locked: 0
