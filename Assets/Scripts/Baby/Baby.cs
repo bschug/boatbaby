@@ -59,7 +59,7 @@ public class Baby : SingletonMonoBehaviour<Baby> {
 		}
 	}
 
-	public void React() {
+	public void PlayEmotion() {
 
 		if ( _animator != null ) {
 
@@ -105,6 +105,9 @@ public class Baby : SingletonMonoBehaviour<Baby> {
     }
 
     public void UseInRightHand (HandItem item) {
+        if (RightHandItem != null) {
+            RemoveRightHandItem();
+        }
         RightHandItem = item;
         RightHandItem.AttachTo( RightHandPivot );
     }
@@ -112,6 +115,12 @@ public class Baby : SingletonMonoBehaviour<Baby> {
     public void RemoveRightHandItem() {
         RightHandItem.Detach();
         RightHandItem = null;
+    }
+
+    public void DropAllItems() {
+        RemoveHat();
+        RemoveLeftHandItem();
+        RemoveRightHandItem();
     }
 
 	public void SetToStartPosition() {

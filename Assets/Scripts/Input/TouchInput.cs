@@ -30,7 +30,8 @@ public class TouchInput : MonoBehaviour {
 
 				_target = _hit.collider.gameObject;
 
-				_target.GetComponent<Baby>().React();
+				Baby.Instance.PlayEmotion();
+                Baby.Instance.DropAllItems();
 			}
 		}
 	}
