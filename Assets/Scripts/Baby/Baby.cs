@@ -54,15 +54,13 @@ public class Baby : SingletonMonoBehaviour<Baby> {
 	public void Eat( EatableItem item ) {
 
 		if ( _animator != null ) {
-
 			_animator.SetTrigger( "Eat" );
+            BabySoundManager.Instance.Eat();
 		}
 	}
 
 	public void PlayEmotion() {
-
 		if ( _animator != null ) {
-
 			_animator.SetTrigger( "Emotion" );
 		}
 	}
