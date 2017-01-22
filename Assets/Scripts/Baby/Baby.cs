@@ -8,6 +8,13 @@ public class Baby : SingletonMonoBehaviour<Baby> {
     public float ResetDuration = 1.5f;
 
     [SerializeField]
+    Transform HeadPivot;
+    [SerializeField]
+    Transform LeftHandPivot;
+    [SerializeField]
+    Transform RightHandPivot;
+
+    [SerializeField]
     int NumIdleAnimations = 6;
     [SerializeField]
     int NumEmotionAnimations = 3;
@@ -18,6 +25,10 @@ public class Baby : SingletonMonoBehaviour<Baby> {
     Quaternion NeutralRotation;
     Vector3 NeutralPosition;
     bool IsResetting = false;
+
+    HandItem LeftHandItem;
+    HandItem RightHandItem;
+    HatItem Hat;
 
 	override protected void Awake() {
         base.Awake();
@@ -67,21 +78,40 @@ public class Baby : SingletonMonoBehaviour<Baby> {
     }
 
     public void UseHat( HatItem item) {
+        if (Hat != null) {
+            RemoveHat();
+        }
 
-    	Debug.Log("Look at my awesome hat!" );
+        Hat = item;
+        Hat.AttachTo( HeadPivot );
     }
 
-    public void UseHandItem( HandItem item, bool isRightSide ) {
+    public void RemoveHat() {
+        Hat.Detach();
+        Hat = null;
+    }
 
-    	if ( isRightSide == true ) {
+    public void UseInLeftHand(HandItem item) {
+        if (LeftHandItem != null) {
+            RemoveLeftHandItem();
+        }
+        LeftHandItem = item;
+        LeftHandItem.AttachTo( LeftHandPivot );
+    }
 
-    		Debug.Log( "Look at this awesome item in my right hand" );
-    	}
+    public void RemoveLeftHandItem() {
+        LeftHandItem.Detach();
+        LeftHandItem = null;
+    }
 
-    	else {
+    public void UseInRightHand (HandItem item) {
+        RightHandItem = item;
+        RightHandItem.AttachTo( RightHandPivot );
+    }
 
-			Debug.Log( "Look at this awesome item in my left hand" );
-    	}
+    public void RemoveRightHandItem() {
+        RightHandItem.Detach();
+        RightHandItem = null;
     }
 
 	public void SetToStartPosition() {

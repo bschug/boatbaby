@@ -16,10 +16,12 @@ public class EyeTracking : SingletonMonoBehaviour<EyeTracking>
 
     public void AddPointOfInterest (PointOfInterest poi) {
         PointsOfInterest.Add( poi );
+        Debug.Log( "Added POI " + poi.name );
     }
 
     public void RemovePointOfInterest (PointOfInterest poi) {
         PointsOfInterest.Remove( poi );
+        Debug.Log( "Removed POI " + poi.name );
     }
 
     private void Update () {
@@ -41,9 +43,8 @@ public class EyeTracking : SingletonMonoBehaviour<EyeTracking>
             }
             return PointsOfInterest
                 .OrderBy( poi => Vector3.Distance(Baby.Instance.ScreenPosition, poi.ScreenPosition) )
-                .Reverse()
-                .OrderBy( poi => poi.Priority )
-                .Last()
+                .OrderBy( poi => -poi.Priority )
+                .First()
                 .ScreenPosition;
         }
     }
